@@ -1,0 +1,45 @@
+.title-bar {
+  height: 60px;
+  background-color: #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 2px solid #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.title-bar h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.close-button {
+  background-color: #444;
+  border: 1px solid #666;
+  border-radius: 4px;
+  color: #ccc;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.close-button:hover {
+  background-color: #ff4444;
+  border-color: #ff6666;
+  color: #ffffff;
+}
+
+.close-button:active {
+  background-color: #cc3333;
+  transform: scale(0.95);
+}

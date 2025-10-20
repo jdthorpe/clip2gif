@@ -1,0 +1,215 @@
+.ffmpeg-command-container {
+  margin: 30px 0;
+  padding: 20px;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  border: 1px solid #444;
+}
+
+.ffmpeg-command-container h3 {
+  margin: 0 0 20px 0;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.command-info {
+  margin-bottom: 20px;
+}
+
+.info-row {
+  display: flex;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.info-row .label {
+  font-weight: bold;
+  color: #00aaff;
+  min-width: 100px;
+  margin-right: 10px;
+}
+
+.info-row .value {
+  color: #ccc;
+  font-family: "Courier New", monospace;
+}
+
+.output-filename-input {
+  background-color: #333;
+  border: 1px solid #555;
+  border-radius: 4px;
+  color: #ccc;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  padding: 4px 8px;
+  min-width: 200px;
+  transition: all 0.2s ease;
+}
+
+.output-filename-input:focus {
+  outline: none;
+  border-color: #00aaff;
+  box-shadow: 0 0 0 2px rgba(0, 170, 255, 0.2);
+  background-color: #2a2a2a;
+}
+
+.output-filename-input:hover {
+  border-color: #666;
+}
+
+.output-filename-input.file-exists {
+  color: #ff4444;
+  border-color: #ff4444;
+  background-color: rgba(255, 68, 68, 0.1);
+}
+
+.output-filename-input.file-exists:focus {
+  border-color: #ff4444;
+  box-shadow: 0 0 0 2px rgba(255, 68, 68, 0.2);
+  background-color: rgba(255, 68, 68, 0.15);
+}
+
+.output-filename-input.file-exists:hover {
+  border-color: #ff6666;
+}
+
+.command-display {
+  background-color: #1a1a1a;
+  border: 1px solid #555;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.command-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #333;
+  border-bottom: 1px solid #555;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.command-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.copy-button {
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.2s;
+}
+
+.copy-button:hover {
+  background-color: #0088cc;
+}
+
+.copy-button:active {
+  background-color: #006699;
+}
+
+.run-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.2s;
+}
+
+.run-button:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.run-button:active:not(:disabled) {
+  background-color: #1e7e34;
+}
+
+.run-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.run-button.running {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.run-and-close-button {
+  background-color: #2a7f3e;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.2s;
+}
+
+.run-and-close-button:hover:not(:disabled) {
+  background-color: #238c44;
+}
+
+.run-and-close-button:active:not(:disabled) {
+  background-color: #1e6b35;
+}
+
+.run-and-close-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.run-and-close-button.running {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.command-text {
+  margin: 0;
+  padding: 15px;
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #00ff00;
+  background-color: #1a1a1a;
+  white-space: pre-wrap;
+  word-break: break-all;
+  overflow-x: auto;
+}
+
+.usage-note {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #333;
+  border-left: 4px solid #ff6600;
+  border-radius: 0 4px 4px 0;
+}
+
+.usage-note p {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.4;
+}
+
+.usage-note p:last-child {
+  margin-bottom: 0;
+}
+
+.usage-note code {
+  background-color: #1a1a1a;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: "Courier New", monospace;
+  color: #00ff00;
+}

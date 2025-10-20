@@ -1,0 +1,101 @@
+.crop-info {
+  margin: 16px 0;
+  padding: 16px;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  border: 1px solid #444;
+}
+
+.crop-info-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.crop-info-label {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.crop-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  font-size: 13px;
+}
+
+.crop-info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  background-color: #1a1a1a;
+  border-radius: 4px;
+  border: 1px solid #333;
+}
+
+.crop-info-key {
+  color: #cccccc;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.crop-info-value {
+  color: #00ff00;
+  font-weight: bold;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+}
+
+.crop-info-input {
+  background-color: #333;
+  border: 1px solid #555;
+  border-radius: 4px;
+  color: #00ff00;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 4px 8px;
+  text-align: center;
+  width: 80px;
+  transition: all 0.2s ease;
+}
+
+.crop-info-input:focus {
+  outline: none;
+  border-color: #00ff00;
+  box-shadow: 0 0 0 2px rgba(0, 255, 0, 0.2);
+}
+
+.crop-info-input:hover {
+  border-color: #666;
+}
+
+/* Chrome, Safari, Edge, Opera - hide number input spinners */
+.crop-info-input::-webkit-outer-spin-button,
+.crop-info-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox - hide number input spinners */
+.crop-info-input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* When no crop area is selected */
+.crop-info-content:has(.crop-info-value:only-child) .crop-info-value {
+  color: #888;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .crop-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

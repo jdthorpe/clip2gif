@@ -1,0 +1,42 @@
+{
+  "name": "clip2gif",
+  "version": "1.0.0",
+  "description": "A command-line tool to convert videos to GIFs with a visual selection interface",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "clip2gif": "./bin/clip2gif.js"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "type-check": "tsc --noEmit",
+    "debug": "node bin/clip2gif.js test/example.mp4"
+  },
+  "keywords": [
+    "gif",
+    "video",
+    "converter",
+    "ffmpeg",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "express": "^4.18.2",
+    "open": "^8.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vitejs/plugin-react": "^4.1.0",
+    "typescript": "^5.2.0",
+    "vite": "^4.5.0"
+  },
+  "preferGlobal": true
+}
